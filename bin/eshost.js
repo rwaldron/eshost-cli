@@ -187,7 +187,7 @@ if (argv.list) {
 
 // add a host
 if (argv.add) {
-  hostManager.add(config, argv.add[0], argv.add[1], argv._[0], argv.args);
+  hostManager.add(config, argv.add[0], argv.add[1], argv._[0], argv.args, argv.tags);
   console.log(`Host '${argv.add[0]}' added`);
   process.exit(0);
 } else {
